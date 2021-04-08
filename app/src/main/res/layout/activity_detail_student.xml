@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Studentdetail">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="105">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="수정"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="삭제"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="70">
+
+        <ToggleButton
+            android:id="@+id/restToggleBtn"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/studentImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/restToggleBtn"
+            android:background="@drawable/nonePhoto"/>
+        <TextView
+            android:id="@+id/StudentIntroTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/studentImage"
+            android:layout_marginBottom="10dp"
+            android:text="김개똥 (18) 남"
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/remainderLessonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강습 잔여횟수 : n"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/StudentIntroTextView"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StudentIntroTextView"
+            android:layout_toRightOf="@+id/remainderLessonTextView"
+            android:layout_marginBottom="5dp"
+            android:text="수정"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/studnetPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remainderLessonTextView"
+            android:layout_toLeftOf="@+id/textCentral"
+            android:layout_marginBottom="5dp"
+            android:text="연락처1"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/textCentral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remainderLessonTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="/"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remainderLessonTextView"
+            android:layout_toRightOf="@+id/textCentral"
+            android:layout_marginBottom="10dp"
+            android:text="연락처1"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/studnetPhoneNumber"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="특이사항"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="90"
+        android:padding="10dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="90"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="105">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="입금내역 수정"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="입금내역 추가"/>
+    </LinearLayout>
+
+</LinearLayout>
