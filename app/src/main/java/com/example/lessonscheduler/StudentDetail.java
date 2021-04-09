@@ -1,14 +1,13 @@
 package com.example.lessonscheduler;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class submitStudent extends AppCompatActivity {
+public class StudentDetail extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_submit_student);
+        setContentView(R.layout.activity_detail_student);
     }
 }

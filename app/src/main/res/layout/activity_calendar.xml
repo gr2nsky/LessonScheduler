@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:text="<"
+            android:text="&lt;"
             android:textSize="30dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -34,11 +34,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:text=">"
+            android:text="&gt;"
             android:textSize="30dp"/>
     </RelativeLayout>
 
     <ListView
+        android:id="@+id/calendar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/calendar_selectMonthLayout"/>

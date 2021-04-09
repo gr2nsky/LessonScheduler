@@ -7,8 +7,8 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_margin="20dp"
-    android:layout_padding="20dp"
-    tools:context=".submitStudent">
+    android:layout_gravity="center"
+    tools:context=".SubmitStudent">
     <TextView
         android:id="@+id/submitTitle"
         android:layout_width="wrap_content"
@@ -21,7 +21,7 @@
         android:id="@+id/subminStudentPhoto"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:background="@drawable/nonePhoto"
+        android:background="@drawable/none_photo"
         android:layout_below="@+id/submitTitle"
         android:layout_centerHorizontal="true">
     </ImageView>

@@ -21,10 +21,10 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:textSize="20dp"
-            android:text="천미란 강사님이 맞으신가요?"/>
+            android:text="OOO 강사님이 맞으신가요?"/>
         </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="30px"
@@ -34,10 +34,18 @@
             android:id="@+id/passworEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_centerVertical="true"
             android:gravity="center"
             android:inputType="textPassword"
             android:hint="비밀번호를 입력하세요."/>
-    </LinearLayout>
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/passworEdit"
+            android:text="login"/>
+    </RelativeLayout>
 
 </LinearLayout>

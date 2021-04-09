@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".Studentdetail">
+    tools:context=".StudentDetail">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/restToggleBtn"
-            android:background="@drawable/nonePhoto"/>
+            android:background="@drawable/none_photo"/>
         <TextView
             android:id="@+id/StudentIntroTextView"
             android:layout_width="wrap_content"
